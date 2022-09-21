@@ -85,15 +85,15 @@ namespace Fajlgyak
                 List<DateTime> CsatlakozasiDatumLista = new List<DateTime>();
                 for (int i = 0; i < orszagok.Count; i++)
                 {
-                    bool SzerepelE = false;
+                    bool Szerepel = false;
                     for (int j = 0; j < CsatlakozasiDatumLista.Count; j++)
                     {
                         if (orszagok[i].CsatlakozasiDatum == CsatlakozasiDatumLista[j])
                         {
-                            SzerepelE = true;
+                            Szerepel = true;
                         }
                     }
-                    if (SzerepelE == false)
+                    if (Szerepel == false)
                     {
                         CsatlakozasiDatumLista.Add(orszagok[i].CsatlakozasiDatum);
                     }
